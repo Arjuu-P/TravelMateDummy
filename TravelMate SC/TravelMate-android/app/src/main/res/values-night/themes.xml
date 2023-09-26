@@ -1,0 +1,45 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.travel_mate" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+        <item name="colorPrimary">@color/app_color</item>
+        <item name="colorPrimaryDark">@color/app_bg</item>
+        <item name="colorAccent">@color/white</item>
+        <item name="android:navigationBarColor">@color/black</item>
+
+        <!-- Primary brand color. -->
+        <item name="colorPrimaryVariant">@color/app_color</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/app_color_secondary_light</item>
+        <item name="colorSecondaryVariant">@color/app_color_secondary</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+    </style>
+
+    <style name="ThemeOverlay.travel_mate.FullscreenContainer" parent="">
+        <item name="fullscreenBackgroundColor">@color/app_bg</item>
+        <item name="fullscreenTextColor">@color/text_color</item>
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+        <item name="colorPrimary">@color/app_color</item>
+        <item name="colorPrimaryDark">@color/app_bg</item>
+        <item name="colorAccent">@color/white</item>
+        <item name="android:navigationBarColor">@color/black</item>
+
+        <!-- Primary brand color. -->
+        <item name="colorPrimaryVariant">@color/app_color</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/app_color_secondary_light</item>
+        <item name="colorSecondaryVariant">@color/app_color_secondary</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+    </style>
+    <style name="TabLayoutStyle" parent="Base.Widget.Design.TabLayout">
+        <item name="android:textSize">@dimen/font_md</item>
+        <item name="textAllCaps">true</item>
+        <item name="background">@drawable/tab_selected_bg</item>
+    </style>
+</resources>

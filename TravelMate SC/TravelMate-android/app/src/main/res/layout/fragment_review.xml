@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragments.ReviewFragment">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_ideas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_add_ideas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/gap_lg"
+            android:layout_marginEnd="@dimen/gap_lg"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="@dimen/gap_xl"
+            android:elevation="@dimen/gap_sm"
+            android:visibility="gone"
+            android:layout_gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/white"
+                android:padding="@dimen/gap_md"
+                android:gravity="center">
+
+                <EditText
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="@dimen/gap_xl"
+                    android:layout_marginStart="@dimen/gap_xxl"
+                    android:background="@drawable/edit_text_bg"
+                    android:padding="@dimen/gap_md"
+                    android:textSize="@dimen/font_lg"
+                    android:paddingStart="@dimen/gap_lg"
+                    android:paddingEnd="@dimen/gap_lg"
+                    android:elevation="@dimen/gap_xsm"
+                    android:hint="Review"
+                    android:layout_margin="@dimen/gap_sm"
+                    android:textColor="@color/app_color"
+                    android:drawablePadding="@dimen/gap_md"
+                    android:textColorHint="@color/app_color_light"
+                    android:layout_marginEnd="@dimen/gap_xxl"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/add_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/app_btn_bg"
+                    android:elevation="4dp"
+                    android:gravity="center"
+                    android:layout_marginStart="@dimen/gap_xl"
+                    android:layout_marginEnd="@dimen/gap_xl"
+                    android:layout_gravity="bottom"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="Submit"
+                    android:textAllCaps="true"
+                    android:textColor="@color/btn_text_color"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/cancel_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/app_btn_secondry_bg"
+                    android:elevation="4dp"
+                    android:gravity="center"
+                    android:layout_marginStart="@dimen/gap_xl"
+                    android:layout_marginEnd="@dimen/gap_xl"
+                    android:layout_gravity="bottom"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="Cancel"
+                    android:textAllCaps="true"
+                    android:textColor="@color/btn_text_color"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <ImageView
+            android:id="@+id/add_review"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_add"
+            android:layout_gravity="bottom|right"
+            android:layout_margin="@dimen/gap_xl"/>
+    </FrameLayout>
+</FrameLayout>

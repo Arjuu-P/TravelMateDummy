@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activities.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/navigation_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/background_img"
+            android:scaleType="fitXY"/>
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="60dp"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:layout_gravity="top"
+                android:background="@color/tranparrent_white"
+                android:elevation="@dimen/gap_sm">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/font_vlg"
+                    android:textStyle="bold"
+                    android:text="@string/app_name"
+                    android:textColor="@color/app_color"/>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:orientation="horizontal"
+                    android:layout_marginEnd="@dimen/gap_lg">
+
+                    <ImageView
+                        android:id="@+id/add_spot"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_add"
+                        android:layout_gravity="left|center_vertical"
+                        android:layout_marginStart="@dimen/gap_lg"/>
+
+                    <ImageView
+                        android:id="@+id/logout"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_logout"
+                        android:onClick="LogOut"
+                        app:tint="@color/app_color"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginStart="@dimen/gap_lg"/>
+                </FrameLayout>
+            </FrameLayout>
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/nav_view"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:labelVisibilityMode="labeled"
+                app:itemIconSize="18dp"
+                android:layout_gravity="bottom"
+                android:elevation="@dimen/gap_sm"
+                android:layout_margin="@dimen/gap_sm"
+                app:itemTextColor="@color/text_color_light"
+                android:background="@drawable/curevd_bg_white"
+                app:itemIconTint="@drawable/navigation_selector"
+                app:menu="@menu/bottom_nav_menu"/>
+
+        </FrameLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.BookingFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_margin="@dimen/gap_md">
+
+            <LinearLayout
+                android:id="@+id/add_bus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_add"
+                    android:layout_gravity="left|center_vertical"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/font_sm"
+                    android:textStyle="bold"
+                    android:layout_marginStart="2dp"
+                    android:text="Bus"
+                    android:textColor="@color/app_color"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/bus_booking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bus Booking"
+                android:textStyle="bold"
+                android:textColor="@color/app_color"
+                android:textSize="@dimen/font_vlg"
+                android:background="@drawable/edit_text_bg"
+                android:padding="@dimen/gap_md"
+                android:layout_margin="@dimen/gap_md"
+                android:elevation="@dimen/gap_lg"/>
+
+            <TextView
+                android:id="@+id/hotel_booking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hotel Booking"
+                android:textStyle="bold"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/font_vlg"
+                android:background="@drawable/edit_text_bg"
+                android:padding="@dimen/gap_md"
+                android:layout_margin="@dimen/gap_md"
+                android:elevation="@dimen/gap_lg"/>
+
+            <LinearLayout
+                android:id="@+id/add_hotel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_add"
+                    android:layout_gravity="left|center_vertical"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/font_sm"
+                    android:textStyle="bold"
+                    android:layout_marginStart="2dp"
+                    android:text="Hotel"
+                    android:textColor="@color/app_color"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragments.ProfileFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="@dimen/gap_md"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/gap_lg"
+                android:layout_marginEnd="@dimen/gap_lg"
+                app:cardCornerRadius="@dimen/gap_xl"
+                android:elevation="@dimen/gap_sm">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/white"
+                    android:padding="@dimen/gap_md"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/sign"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Profile"
+                        android:textStyle="bold"
+                        android:textColor="@color/app_color"
+                        android:textSize="@dimen/font_xxl"
+                        android:layout_marginBottom="@dimen/gap_xxl"/>
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/logo"/>
+
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="@dimen/gap_xl"
+                        android:layout_marginStart="@dimen/gap_xxl"
+                        android:background="@drawable/edit_text_bg"
+                        android:padding="@dimen/gap_md"
+                        android:maxLines="1"
+                        android:textSize="@dimen/font_lg"
+                        android:paddingStart="@dimen/gap_lg"
+                        android:paddingEnd="@dimen/gap_lg"
+                        android:elevation="@dimen/gap_xsm"
+                        android:layout_margin="@dimen/gap_sm"
+                        android:textColor="@color/app_color"
+                        android:drawablePadding="@dimen/gap_md"
+                        android:layout_marginEnd="@dimen/gap_xxl"/>
+
+                    <TextView
+                        android:id="@+id/email"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="@dimen/gap_xl"
+                        android:layout_marginStart="@dimen/gap_xxl"
+                        android:background="@drawable/edit_text_bg"
+                        android:padding="@dimen/gap_md"
+                        android:maxLines="1"
+                        android:textSize="@dimen/font_lg"
+                        android:paddingStart="@dimen/gap_lg"
+                        android:paddingEnd="@dimen/gap_lg"
+                        android:elevation="@dimen/gap_xsm"
+                        android:layout_margin="@dimen/gap_sm"
+                        android:textColor="@color/app_color"
+                        android:drawablePadding="@dimen/gap_md"
+                        android:layout_marginEnd="@dimen/gap_xxl"/>
+
+                    <TextView
+                        android:id="@+id/phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="@dimen/gap_xl"
+                        android:layout_marginStart="@dimen/gap_xxl"
+                        android:background="@drawable/edit_text_bg"
+                        android:padding="@dimen/gap_md"
+                        android:maxLines="1"
+                        android:textSize="@dimen/font_lg"
+                        android:paddingStart="@dimen/gap_lg"
+                        android:paddingEnd="@dimen/gap_lg"
+                        android:elevation="@dimen/gap_xsm"
+                        android:layout_margin="@dimen/gap_sm"
+                        android:textColor="@color/app_color"
+                        android:drawablePadding="@dimen/gap_md"
+                        android:layout_marginEnd="@dimen/gap_xxl"/>
+
+                    <TextView
+                        android:id="@+id/mark_exp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/font_xl"
+                        android:textColor="@color/app_color"
+                        android:text="Mark Expence"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="@dimen/gap_xl"
+                android:layout_marginTop="@dimen/gap_xxl"
+                android:elevation="@dimen/gap_sm">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/white"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_margin="@dimen/gap_md">
+
+                        <TextView
+                            android:id="@+id/my_bookings"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Bookings"
+                            android:textStyle="bold"
+                            android:textColor="@color/app_color"
+                            android:textSize="@dimen/font_vlg"
+                            android:background="@drawable/edit_text_bg"
+                            android:padding="@dimen/gap_md"
+                            android:layout_margin="@dimen/gap_md"
+                            android:elevation="@dimen/gap_lg"/>
+
+                        <TextView
+                            android:id="@+id/liked_spot"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Liked Spot"
+                            android:textStyle="bold"
+                            android:textColor="@color/text_color"
+                            android:textSize="@dimen/font_vlg"
+                            android:background="@drawable/edit_text_bg"
+                            android:padding="@dimen/gap_md"
+                            android:layout_margin="@dimen/gap_md"
+                            android:elevation="@dimen/gap_lg"/>
+
+                        <TextView
+                            android:id="@+id/expences"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Expences"
+                            android:textStyle="bold"
+                            android:textColor="@color/text_color"
+                            android:textSize="@dimen/font_vlg"
+                            android:background="@drawable/edit_text_bg"
+                            android:padding="@dimen/gap_md"
+                            android:layout_margin="@dimen/gap_md"
+                            android:elevation="@dimen/gap_lg"/>
+
+                    </LinearLayout>
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_spot"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible"/>
+                    <TextView
+                        android:id="@+id/no_data"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="No Data"
+                        android:visibility="gone"
+                        android:textColor="@color/app_color"
+                        android:textSize="@dimen/font_xl"
+                        android:gravity="center"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</FrameLayout>
